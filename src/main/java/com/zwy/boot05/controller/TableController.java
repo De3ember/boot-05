@@ -29,7 +29,7 @@ public class TableController {
 
         Page<User> userPage=new Page<>(pn,2);
         Page page = userService.page(userPage,null);
-        List<User> list=page.getRecords();
+
 
         model.addAttribute("page",page);
 
